@@ -37,14 +37,15 @@ if __name__ == '__main__':
     for i in range(len(tabFFT2)):
         for j in range(len(tabFFT2[0])):
             tabFFT2[i][j]=round(tabFFT2[i][j].real,2)+round(tabFFT2[i][j].imag,2)*1j
+    print("Transformé 1D")
+    print(tabFTD)
+    print("Transformé 1D rapide")
+    print(tabFFT)
     print("Transformé 2D")
     print(tabFTD2)
-    print("Transforme 2D rapide")
+    print("Transformé 2D rapide")
     print(tabFFT2)
-    print("Transforme 1D")
-    print(tabFTD)
-    print("Transforme 1D rapide")
-    print(tabFFT)
+
     #Lire image et l'afficher
     img = cv2.imread('calimero.jpg',0)
     cv2.imshow('De Base',img)
